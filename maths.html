@@ -1,0 +1,53 @@
+<HTML>
+
+<HEAD>
+    <script>
+        document.onmousemove = animatedCircles;
+
+        const colors = ['#F4D03F', '#6cf', '#eba13a'];
+
+        function animatedCircles(event) {
+            let circle = document.createElement('div');
+            circle.setAttribute('class', 'circle');
+            document.body.appendChild(circle);
+
+            circle.style.left = event.clientX + 'px';
+            circle.style.top = event.clientY + 'px';
+
+            let color = colors[Math.floor(Math.random() * colors.length)];
+            circle.style.borderColor = color;
+
+            circle.style.transition = 'all 0.5s linear 0s';
+
+            circle.style.left = circle.offsetLeft - 20 + 'px';
+            circle.style.top = circle.offsetTop - 20 + 'px';
+
+            circle.style.width = '50px';
+            circle.style.height = '50px';
+            circle.style.borderWidth = '5px';
+            circle.style.opacity = 0;
+        }
+    </script>
+    <style>
+        .circle {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            position: absolute;
+            border-radius: 15px;
+        }
+    </style>
+</HEAD>
+
+<body bgcolor="#2E86C1">
+    <TITLE> MATHS LAB </TITLE>
+    <CENTER><img src="https://drive.google.com/uc?id=1a_yLVk6SlP9bInRgUd0MUSw14d4CRea2"></CENTER>
+    <FONT COLOR="white" SIZE="6">
+        <MARQUEE DIRECTION="RIGHT">MATHS LAB</FONT>
+    </MARQUEE>
+<CENTER> <FONT COLOR="white ">Maths is one of the important subject in the school.  And teaching it correctly is also important.  Our wonderful maths helps our teaching staffs to teach
+maths better in a colourful way the way what students like to learn.  It is also improves the interest in maths.</CENTER></FONT>
+    <IMG SRC="https://drive.google.com/uc?id=199C6jxUTIN7akJL0GbV-KAzKFRnBFOiu" width="1500'' size=" 300 " height="500 ">
+</CENTER>
+</body>
+</html>

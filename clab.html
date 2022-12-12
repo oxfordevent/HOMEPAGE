@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<script>
+document.onmousemove = animatedCircles;
+
+        const colors = ['#F4D03F', '#6cf', '#eba13a'];
+
+        function animatedCircles(event) {
+            let circle = document.createElement('div');
+            circle.setAttribute('class', 'circle');
+            document.body.appendChild(circle);
+
+            circle.style.left = event.clientX + 'px';
+            circle.style.top = event.clientY + 'px';
+
+            let color = colors[Math.floor(Math.random() * colors.length)];
+            circle.style.borderColor = color;
+
+            circle.style.transition = 'all 0.5s linear 0s';
+
+            circle.style.left = circle.offsetLeft - 20 + 'px';
+            circle.style.top = circle.offsetTop - 20 + 'px';
+
+            circle.style.width = '50px';
+            circle.style.height = '50px';
+            circle.style.borderWidth = '5px';
+            circle.style.opacity = 0;
+        }
+</script>
+<style>
+.circle {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            position: absolute;
+            border-radius: 15px;
+        }
+</style>
+</HEAD>
+<BODY bgcolor="#2E86C1 ">
+ <CENTER><img src="D:\oxford\header.png"></CENTER>
+<MARQUEE direction="right"><h1><Font Color="white">COMPUTER LAB</h1></MARQUEE></FONT>
+<center><h3><Font Color="white">Technology is a important thing to live the modern world.  And, in our school we provide the opportunity to the students to access the computers and do inovative stuffs and creating
+new projects. </h3></FONT>
+<IMG Src="D:\oxford\complab.jpg " width="1200" height="700"></center>
+</BODY>
+</HEAD>
